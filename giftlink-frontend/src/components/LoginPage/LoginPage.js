@@ -45,7 +45,6 @@ function LoginPage() {
 
     //Step 2: Task 1
     const json = await res.json();
-    console.log("Json", json);
     if (json.authtoken) {
       //Step 2: Task 2
       sessionStorage.setItem("auth-token", json.authtoken);
@@ -59,10 +58,10 @@ function LoginPage() {
       //Step 2: Task 5
       document.getElementById("email").value = "";
       document.getElementById("password").value = "";
-      setIncorrect("Wrong password. Try again.");
+      setIncorrect(json.error);
       setTimeout(() => {
         setIncorrect("");
-      }, 2000);
+      }, 3000);
     }
   };
 

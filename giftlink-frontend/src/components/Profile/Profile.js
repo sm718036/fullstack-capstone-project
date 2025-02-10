@@ -86,7 +86,7 @@ const Profile = () => {
         setTimeout(() => {
           setChanged("");
           navigate("/");
-        }, 1000);
+        }, 3000);
       } else {
         // Handle error case
         throw new Error("Failed to update profile");
