@@ -1,6 +1,6 @@
 ---
-name: User Stories
-about: A custom template to add user stories to work on them effectively.
+name: User Story
+about: Template to write user stories
 title: ''
 labels: ''
 assignees: ''
